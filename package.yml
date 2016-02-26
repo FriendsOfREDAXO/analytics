@@ -1,0 +1,11 @@
+package: rex_analytics
+version: '1.0'
+author: Thomas Kaegi
+supportpage: github.com/phoebusryan/rex_analytics
+
+page:
+    title: 'translate:title'
+    perm: rex_analytics[]
+    icon: rex-icon fa-bar-chart
+    subpages:
+        config: { title: 'translate:config', perm: rex_analytics[config] }

@@ -1,0 +1,9 @@
+rex_analytics_title = Analytics
+
+rex_analytics_config = Konfiguration
+rex_analytics_config_code = Code
+rex_analytics_config_action_save = Einstellungen speichern
+rex_analytics_config_saved = Einstellungen wurden gespeichert!
+
+perm_general_rex_analytics[] = Rechte für das Analytics-Addon
+perm_general_rex_analytics[config] = Rechte für die Konfiguratonsseite des Analytics-Addons
