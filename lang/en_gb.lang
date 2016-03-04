@@ -5,9 +5,9 @@ rex_analytics_config_code = Code
 rex_analytics_config_action_save = Save settings
 rex_analytics_config_saved = Settings successfully saved!
 
-rex_address_help_intro = Das Addon bietet die Möglichkeit Googleanalytics im Frontend einzubinden und via Backend zu konfigurieren. Das Addon hat den Vorteil, dass evtl. anfallende Codeänderungen seitens Google automatisch geupdatet werden. Im Frontend kann man den Analyticscode wie folgt einbinden:
-rex_address_help_withtags = With &lt;script&gt;-Tags
-rex_address_help_withouttags = Without &lt;script&gt;-Tags
+rex_analytics_help_intro = Das Addon bietet die Möglichkeit Googleanalytics im Frontend einzubinden und via Backend zu konfigurieren. Das Addon hat den Vorteil, dass evtl. anfallende Codeänderungen seitens Google automatisch geupdatet werden. Im Frontend kann man den Analyticscode wie folgt einbinden:
+rex_analytics_help_withtags = With <script>-Tags
+rex_analytics_help_withouttags = Without <script>-Tags
 
 perm_general_rex_analytics[] = Permissions for the Analytics-Addon
 perm_general_rex_analytics[config] = Permissions for the Configurationpage of the Analytics-Addon
