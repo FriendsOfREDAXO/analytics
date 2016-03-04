@@ -5,7 +5,7 @@
 	$code = "";
 	$code .= "<?php".PHP_EOL;
 	$code .= "	echo rex_analytics::output(true);".PHP_EOL;
-	$code .= "?>".PHP_EOL;
+	$code .= "?>";
 ?>
 <pre><?=highlight_string($code,true);?></pre>
 
@@ -14,6 +14,6 @@
 	$code = "";
 	$code .= "<?php".PHP_EOL;
 	$code .= "	echo rex_analytics::output();".PHP_EOL;
-	$code .= "?>".PHP_EOL;
+	$code .= "?>";
 ?>
 <pre><?=highlight_string($code,true);?></pre>
