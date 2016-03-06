@@ -1,19 +1,27 @@
-<p><?=$this->i18n('help_intro');?></p>
-
-<p><b><?=$this->i18n('help_withtags');?></b></p>
 <?php
+	echo rex_view::info($this->i18n('help_intro'));
+	
 	$code = "";
 	$code .= "<?php".PHP_EOL;
 	$code .= "	echo rex_analytics::output(true);".PHP_EOL;
 	$code .= "?>";
-?>
-<pre><?=highlight_string($code,true);?></pre>
-
-<p><b><?=$this->i18n('help_withouttags');?></b></p>
-<?php
+	
+	$fragment = new rex_fragment();
+	$fragment->setVar('class', 'info', false);
+	$fragment->setVar('title', $this->i18n('help_withtags'), false);
+	$fragment->setVar('body', rex_string::highlight($code), false);
+	echo $fragment->parse('core/page/section.php');
+	
+	///
+	
 	$code = "";
 	$code .= "<?php".PHP_EOL;
 	$code .= "	echo rex_analytics::output();".PHP_EOL;
 	$code .= "?>";
+	
+	$fragment = new rex_fragment();
+	$fragment->setVar('class', 'info', false);
+	$fragment->setVar('title', $this->i18n('help_withouttags'), false);
+	$fragment->setVar('body', rex_string::highlight($code), false);
+	echo $fragment->parse('core/page/section.php');
 ?>
-<pre><?=highlight_string($code,true);?></pre>
