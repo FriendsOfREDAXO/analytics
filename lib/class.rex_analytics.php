@@ -12,13 +12,20 @@
 			if (!rex_backend_login::hasSession()) {
 				$code = '';
 				if ($tags) {
-					$code .= "<script>".PHP_EOL;
+					$code .= "<script type=\"text/javascript\">".PHP_EOL;
 				}
 				
 				$fragment = new rex_fragment();
 				$fragment->setVar('code', self::getCode(), false);
-				$fragment->setVar('anonymize', self::getCode(), false);
-				$code .= $fragment->parse('rex_analytics/embedcode.php');
+				$fragment->setVar('anonymize', self::getAnon(), false);
+                if(rex_addon::get('rex_analytics')->getConfig('oldembed'))
+                {
+				  $code .= $fragment->parse('rex_analytics/embedcode_old.php');
+                }
+                else
+                {
+				  $code .= $fragment->parse('rex_analytics/embedcode.php');
+                }
 				
 				if ($tags) {
 					$code .= "</script>".PHP_EOL;
