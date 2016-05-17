@@ -18,27 +18,27 @@
 				$fragment = new rex_fragment();
 				$fragment->setVar('code', self::getCode(), false);
 				$fragment->setVar('anonymize', self::getAnon(), false);
-                if(rex_addon::get('rex_analytics')->getConfig('oldembed'))
-                {
-				  $code .= $fragment->parse('rex_analytics/embedcode_old.php');
-                }
-                else
-                {
-				  $code .= $fragment->parse('rex_analytics/embedcode.php');
-                }
+				if(rex_addon::get('rex_analytics')->getConfig('oldembed'))
+				{
+					$code .= $fragment->parse('rex_analytics/embedcode_old.php');
+				}
+				else
+				{
+					$code .= $fragment->parse('rex_analytics/embedcode.php');
+				}
 				
 				if ($tags) {
 					$code .= "</script>".PHP_EOL;
 				}
 				
-                if(self::getCode() != '')
-                {
-				  return $code;
-                }
-                else
-                {
-                  return '';
-                }
+				if(self::getCode() != '')
+				{
+					return $code;
+				}
+				else
+				{
+					return '';
+				}
 			}
 		}
 	}
