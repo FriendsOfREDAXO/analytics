@@ -2,6 +2,7 @@ rex_analytics_title = Analytics
 
 rex_analytics_config = Konfiguration
 rex_analytics_config_code = Tracking-ID
+rex_analytics_config_anonymize = IP <a href="https://www.datenschutzbeauftragter-info.de/fachbeitraege/google-analytics-datenschutzkonform-einsetzen/" title="Google Analytics datenschutzkonform einsetzen" target="_blank">anonymisieren <i class="fa fa-external-link"></i></a> ?
 rex_analytics_config_action_save = Einstellungen speichern
 rex_analytics_config_saved = Einstellungen wurden gespeichert!
 

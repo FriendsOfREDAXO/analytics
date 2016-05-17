@@ -4,6 +4,7 @@
 	if (rex_post('rex_analytics-config-submit', 'boolean')) {
 		$this->setConfig(rex_post('config', [
 			['code', 'string'],
+            ['anonymize', 'bool'],
 		]));
 		
 		$content .= rex_view::info($this->i18n('config_saved'));
@@ -20,6 +21,11 @@
 		$n['label'] = '<label for="rex_analytics-config-code">'.$this->i18n('config_code').'</label>';
 		$n['field'] = '<input type="text" id="rex_analytics-config-code" name="config[code]" value="'.$this->getConfig('code').'"/>';
 		$formElements[] = $n;
+
+        $n = [];
+        $n['label'] = '<label for="rex_analytics-anonymize">' . rex_i18n::rawMsg('rex_analytics_config_anonymize', false) . '</label>';
+        $n['field'] = '<input type="checkbox" id="rex_analytics-anonymize" name="config[anonymize]" value="1" ' . ($this->getConfig('anonymize') ? ' checked="checked"' : '') . ' />';
+        $formElements[] = $n;
 	//End - code
 	
 	$fragment = new rex_fragment();
