@@ -1,7 +1,7 @@
 rex_analytics_title = Analytics
 
 rex_analytics_config = Configuration
-rex_analytics_config_code = Code
+rex_analytics_config_code = Tracking-ID
 rex_analytics_config_action_save = Save settings
 rex_analytics_config_saved = Settings successfully saved!
 
