@@ -24,7 +24,11 @@
 					$code .= "</script>".PHP_EOL;
 				}
 				
-				return $code;
+				if (self::getCode() != '') {
+					return $code;
+				} else {
+					return '';
+				}
 			}
 		}
 	}
