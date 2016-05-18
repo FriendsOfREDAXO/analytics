@@ -1,9 +1,10 @@
 <?php
 	$content = '';
 	
-	if (rex_post('rex_analytics-config-submit', 'boolean')) {
+	if (rex_post('config-submit', 'boolean')) {
 		$this->setConfig(rex_post('config', [
 			['code', 'string'],
+			['anonymize', 'bool'],
 		]));
 		
 		$content .= rex_view::info($this->i18n('config_saved'));
@@ -22,6 +23,13 @@
 		$formElements[] = $n;
 	//End - code
 	
+	//Start - anonymize
+		$n = [];
+		$n['label'] = '<label for="rex_analytics-config-anonymize">'.rex_i18n::rawMsg('rex_analytics_config_anonymize', false).'</label>';
+		$n['field'] = '<input type="checkbox" id="rex_analytics-config-anonymize" name="config[anonymize]" value="1" ' . ($this->getConfig('anonymize') ? ' checked="checked"' : '') . ' />';
+		$formElements[] = $n;
+	//End - anonymize
+	
 	$fragment = new rex_fragment();
 	$fragment->setVar('elements', $formElements, false);
 	$content .= $fragment->parse('core/form/form.php');
@@ -33,7 +41,7 @@
 	$formElements = [];
 	
 	$n = [];
-	$n['field'] = '<input type="submit" name="rex_analytics-config-submit" value="'.$this->i18n('config_action_save').'" '.rex::getAccesskey($this->i18n('config_action_save'), 'save').' />';
+	$n['field'] = '<input type="submit" name="config-submit" value="'.$this->i18n('config_action_save').'" '.rex::getAccesskey($this->i18n('config_action_save'), 'save').' />';
 	$formElements[] = $n;
 	
 	$fragment = new rex_fragment();

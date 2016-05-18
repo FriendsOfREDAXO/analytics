@@ -4,6 +4,10 @@
 			return rex_addon::get('rex_analytics')->getConfig('code');
 		}
 		
+		public static function getAnonymize() {
+			return rex_addon::get('rex_analytics')->getConfig('anonymize');
+		}
+		
 		public static function output($tags = true) {
 			if (!rex_backend_login::hasSession()) {
 				$code = '';
@@ -13,6 +17,7 @@
 				
 				$fragment = new rex_fragment();
 				$fragment->setVar('code', self::getCode(), false);
+				$fragment->setVar('anonymize', self::getAnonymize(), false);
 				$code .= $fragment->parse('rex_analytics/embedcode.php');
 				
 				if ($tags) {
