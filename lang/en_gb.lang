@@ -3,6 +3,7 @@ rex_analytics_title = Analytics
 rex_analytics_config = Configuration
 rex_analytics_config_code = Tracking-ID
 rex_analytics_config_anonymize = <a href="https://www.datenschutzbeauftragter-info.de/fachbeitraege/google-analytics-datenschutzkonform-einsetzen/" title="Use of Google Analytics privacy compliant" target="_blank">Anonymize <i class="fa fa-external-link"></i></a> IP?
+rex_analytics_config_optoutcookie = Make Opt-Out-Cookie settable?
 rex_analytics_config_oldembed = Use "Classic Analytics"?
 rex_analytics_config_oldembed_head = Deprecated Use-Case
 rex_analytics_config_oldembed_description = This checkbox should only be checked if the old ga.js is still in use and was never migrated to the newer analytics.js.

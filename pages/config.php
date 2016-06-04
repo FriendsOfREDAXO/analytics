@@ -5,6 +5,7 @@
 		$this->setConfig(rex_post('config', [
 			['code', 'string'],
 			['anonymize', 'bool'],
+			['optoutcookie', 'bool'],
 			['oldembed', 'bool'],
 		]));
 		
@@ -26,6 +27,11 @@
 		$n = [];
 		$n['label'] = '<label for="rex_analytics-anonymize">' . rex_i18n::rawMsg('rex_analytics_config_anonymize', false) . '</label>';
 		$n['field'] = '<input type="checkbox" id="rex_analytics-anonymize" name="config[anonymize]" value="1" ' . ($this->getConfig('anonymize') ? ' checked="checked"' : '') . ' />';
+		$formElements[] = $n;
+
+		$n = [];
+		$n['label'] = '<label for="rex_analytics-optoutcookie">' . rex_i18n::rawMsg('rex_analytics_config_optoutcookie', false) . '</label>';
+		$n['field'] = '<input type="checkbox" id="rex_analytics-optoutcookie" name="config[optoutcookie]" value="1" ' . ($this->getConfig('optoutcookie') ? ' checked="checked"' : '') . ' />';
 		$formElements[] = $n;
 
 		$n = [];

@@ -1,3 +1,4 @@
+<?php if($this->optoutcookie): ?>
 var gaProperty = '<?=$this->code;?>';
 var disableStr = 'ga-disable-' + gaProperty;
 if (document.cookie.indexOf(disableStr + '=true') > -1) {
@@ -7,7 +8,7 @@ function gaOptout() {
   document.cookie = disableStr + '=true; expires=Thu, 31 Dec 2099 23:59:59 UTC; path=/';
   window[disableStr] = true;
 }
-
+<?php endif; ?>
 var _gaq = _gaq || [];
 _gaq.push(['_setAccount', '<?=$this->code;?>']);
 <?=($this->anonymize ? '_gaq.push([\'_gat._anonymizeIp\']);'."\n" : '');?>
