@@ -3,6 +3,10 @@ rex_analytics_title = Analytics
 rex_analytics_config = Konfiguration
 rex_analytics_config_code = Tracking-ID
 rex_analytics_config_anonymize = IP <a href="https://www.datenschutzbeauftragter-info.de/fachbeitraege/google-analytics-datenschutzkonform-einsetzen/" title="Google Analytics datenschutzkonform einsetzen" target="_blank">anonymisieren <i class="fa fa-external-link"></i></a> ?
+rex_analytics_config_optoutcookie = Opt-Out-Cookie setzbar machen?
+rex_analytics_config_oldembed = "Klassisches Analytics" nutzen?
+rex_analytics_config_oldembed_head = Veraltete Nutzung
+rex_analytics_config_oldembed_description = Hier sollte der Haken nur gesetzt werden, wenn das alte ga.js noch verwendet wird und nie eine Migration zum neuen analytics.js stattgefunden hat.
 rex_analytics_config_action_save = Einstellungen speichern
 rex_analytics_config_saved = Einstellungen wurden gespeichert!
 
