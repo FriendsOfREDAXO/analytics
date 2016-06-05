@@ -3,15 +3,15 @@
 		public static function getCode() {
 			return rex_addon::get('rex_analytics')->getConfig('code');
 		}
-
-		public static function getAnon() {
+		
+		public static function getAnonymize() {
 			return rex_addon::get('rex_analytics')->getConfig('anonymize');
 		}
 
 		public static function getOptOutCookie() {
 			return rex_addon::get('rex_analytics')->getConfig('optoutcookie');
 		}
-
+		
 		public static function output($tags = true) {
 			if (!rex_backend_login::hasSession()) {
 				$code = '';
@@ -21,7 +21,7 @@
 				
 				$fragment = new rex_fragment();
 				$fragment->setVar('code', self::getCode(), false);
-				$fragment->setVar('anonymize', self::getAnon(), false);
+				$fragment->setVar('anonymize', self::getAnonymize(), false);
 				$fragment->setVar('optoutcookie', self::getOptOutCookie(), false);
 				if(rex_addon::get('rex_analytics')->getConfig('oldembed'))
 				{
@@ -36,12 +36,9 @@
 					$code .= "</script>".PHP_EOL;
 				}
 				
-				if(self::getCode() != '')
-				{
+				if (self::getCode() != '') {
 					return $code;
-				}
-				else
-				{
+				} else {
 					return '';
 				}
 			}
