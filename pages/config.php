@@ -23,16 +23,21 @@
 		$n['label'] = '<label for="rex_analytics-config-code">'.$this->i18n('config_code').'</label>';
 		$n['field'] = '<input type="text" id="rex_analytics-config-code" name="config[code]" value="'.$this->getConfig('code').'"/>';
 		$formElements[] = $n;
+	//End - code
 
+	//Start - anonymize
 		$n = [];
-		$n['label'] = '<label for="rex_analytics-anonymize">' . rex_i18n::rawMsg('rex_analytics_config_anonymize', false) . '</label>';
-		$n['field'] = '<input type="checkbox" id="rex_analytics-anonymize" name="config[anonymize]" value="1" ' . ($this->getConfig('anonymize') ? ' checked="checked"' : '') . ' />';
+		$n['label'] = '<label for="rex_analytics-config-anonymize">'.rex_i18n::rawMsg('rex_analytics_config_anonymize', false).'</label>';
+		$n['field'] = '<input type="checkbox" id="rex_analytics-config-anonymize" name="config[anonymize]" value="1" ' . ($this->getConfig('anonymize') ? ' checked="checked"' : '') . ' />';
 		$formElements[] = $n;
+	//End - anonymize
 
+	//Start - optoutcookie
 		$n = [];
-		$n['label'] = '<label for="rex_analytics-optoutcookie">' . rex_i18n::rawMsg('rex_analytics_config_optoutcookie', false) . '</label>';
-		$n['field'] = '<input type="checkbox" id="rex_analytics-optoutcookie" name="config[optoutcookie]" value="1" ' . ($this->getConfig('optoutcookie') ? ' checked="checked"' : '') . ' />';
+		$n['label'] = '<label for="rex_analytics-config-optoutcookie">' . rex_i18n::rawMsg('rex_analytics_config_optoutcookie', false) . '</label>';
+		$n['field'] = '<input type="checkbox" id="rex_analytics-config-optoutcookie" name="config[optoutcookie]" value="1" ' . ($this->getConfig('optoutcookie') ? ' checked="checked"' : '') . ' />';
 		$formElements[] = $n;
+	//End - optoutcookie
 
 		$n = [];
 		$n['header']= '<h3>' . $this->i18n('config_oldembed_head') . '</h3>';
@@ -40,14 +45,7 @@
 		$n['label'] = '<label for="rex_analytics-oldembed">' . $this->i18n('config_oldembed') . '</label>';
 		$n['field'] = '<input type="checkbox" id="rex_analytics-oldembed" name="config[oldembed]" value="1" ' . ($this->getConfig('oldembed') ? ' checked="checked"' : '') . ' />';
 		$formElements[] = $n;
-	//End - code
 	
-	//Start - anonymize
-		$n = [];
-		$n['label'] = '<label for="rex_analytics-config-anonymize">'.rex_i18n::rawMsg('rex_analytics_config_anonymize', false).'</label>';
-		$n['field'] = '<input type="checkbox" id="rex_analytics-config-anonymize" name="config[anonymize]" value="1" ' . ($this->getConfig('anonymize') ? ' checked="checked"' : '') . ' />';
-		$formElements[] = $n;
-	//End - anonymize
 	
 	$fragment = new rex_fragment();
 	$fragment->setVar('elements', $formElements, false);
