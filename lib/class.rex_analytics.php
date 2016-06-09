@@ -13,7 +13,7 @@
  		}
 		
 		public static function output($tags = true) {
-			//if (!rex_backend_login::hasSession()) {
+			if (!rex_backend_login::hasSession()) {
 				$code = '';
 				if ($tags) {
 					$code .= "<script>".PHP_EOL;
@@ -34,7 +34,7 @@
 				} else {
 					return '';
 				}
-			//}
+			}
 		}
 	}
 ?>
