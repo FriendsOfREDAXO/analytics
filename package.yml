@@ -1,12 +1,12 @@
-package: rex_analytics
+package: analytics
 version: '1.2.2'
 author: Friends Of REDAXO
-supportpage: github.com/FriendsOfREDAXO/rex_analytics
+supportpage: github.com/FriendsOfREDAXO/analytics
 
 page:
     title: 'translate:title'
-    perm: rex_analytics[]
+    perm: analytics[]
     pjax: true
     icon: rex-icon fa-bar-chart
     subpages:
-        config: { title: 'translate:config', perm: rex_analytics[config] }
+        config: { title: 'translate:config', perm: analytics[config] }

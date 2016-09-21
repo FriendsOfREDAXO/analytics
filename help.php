@@ -3,7 +3,7 @@
 	
 	$code = "";
 	$code .= "<?php".PHP_EOL;
-	$code .= "	echo rex_analytics::output(true);".PHP_EOL;
+	$code .= "	echo analytics::output(true);".PHP_EOL;
 	$code .= "?>";
 	
 	$fragment = new rex_fragment();
@@ -16,7 +16,7 @@
 	
 	$code = "";
 	$code .= "<?php".PHP_EOL;
-	$code .= "	echo rex_analytics::output();".PHP_EOL;
+	$code .= "	echo analytics::output();".PHP_EOL;
 	$code .= "?>";
 	
 	$fragment = new rex_fragment();

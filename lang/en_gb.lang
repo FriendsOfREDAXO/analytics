@@ -1,15 +1,15 @@
-rex_analytics_title = Analytics
+analytics_title = Analytics
 
-rex_analytics_config = Configuration
-rex_analytics_config_code = Tracking-ID
-rex_analytics_config_anonymize = <a href="https://www.datenschutzbeauftragter-info.de/fachbeitraege/google-analytics-datenschutzkonform-einsetzen/" title="Use of Google Analytics privacy compliant" target="_blank">Anonymize <i class="fa fa-external-link"></i></a> IP?
-rex_analytics_config_optoutcookie = Make Opt-Out-Cookie settable?
-rex_analytics_config_action_save = Save settings
-rex_analytics_config_saved = Settings successfully saved!
+analytics_config = Configuration
+analytics_config_code = Tracking-ID
+analytics_config_anonymize = <a href="https://www.datenschutzbeauftragter-info.de/fachbeitraege/google-analytics-datenschutzkonform-einsetzen/" title="Use of Google Analytics privacy compliant" target="_blank">Anonymize <i class="fa fa-external-link"></i></a> IP?
+analytics_config_optoutcookie = Make Opt-Out-Cookie settable?
+analytics_config_action_save = Save settings
+analytics_config_saved = Settings successfully saved!
 
-rex_analytics_help_intro = Das Addon bietet die Möglichkeit Googleanalytics im Frontend einzubinden und via Backend zu konfigurieren. Das Addon hat den Vorteil, dass evtl. anfallende Codeänderungen seitens Google automatisch geupdatet werden. Im Frontend kann man den Analyticscode wie folgt einbinden:
-rex_analytics_help_withtags = With <script>-Tags
-rex_analytics_help_withouttags = Without <script>-Tags
+analytics_help_intro = Das Addon bietet die Möglichkeit Googleanalytics im Frontend einzubinden und via Backend zu konfigurieren. Das Addon hat den Vorteil, dass evtl. anfallende Codeänderungen seitens Google automatisch geupdatet werden. Im Frontend kann man den Analyticscode wie folgt einbinden:
+analytics_help_withtags = With <script>-Tags
+analytics_help_withouttags = Without <script>-Tags
 
-perm_general_rex_analytics[] = Permissions for the Analytics-Addon
-perm_general_rex_analytics[config] = Permissions for the Configurationpage of the Analytics-Addon
+perm_general_analytics[] = Permissions for the Analytics-Addon
+perm_general_analytics[config] = Permissions for the Configurationpage of the Analytics-Addon
