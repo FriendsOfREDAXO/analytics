@@ -23,24 +23,30 @@
 		$n['field'] = '<input type="text" id="analytics-config-code" name="config[code]" value="'.$this->getConfig('code').'">';
 		$formElements[] = $n;
 	//End - code
-	
+
+	$fragment = new rex_fragment();
+	$fragment->setVar('elements', $formElements, false);
+	$content .= $fragment->parse('core/form/form.php');
+
+	$formElements = [];
+
 	//Start - anonymize
 		$n = [];
 		$n['label'] = '<label for="analytics-config-anonymize">'.rex_i18n::rawMsg('analytics_config_anonymize', false).'</label>';
 		$n['field'] = '<input type="checkbox" id="analytics-config-anonymize" name="config[anonymize]" value="1" '.($this->getConfig('anonymize') ? ' checked="checked"' : '').'>';
 		$formElements[] = $n;
 	//End - anonymize
-	
+
 	//Start - optoutcookie
 		$n = [];
- 		$n['label'] = '<label for="analytics-config-optoutcookie">'.rex_i18n::rawMsg('analytics_config_optoutcookie', false).'</label>';
- 		$n['field'] = '<input type="checkbox" id="analytics-config-optoutcookie" name="config[optoutcookie]" value="1" '.($this->getConfig('optoutcookie') ? ' checked="checked"' : '').'>';
+		$n['label'] = '<label for="analytics-config-optoutcookie">'.rex_i18n::rawMsg('analytics_config_optoutcookie', false).'</label>';
+		$n['field'] = '<input type="checkbox" id="analytics-config-optoutcookie" name="config[optoutcookie]" value="1" '.($this->getConfig('optoutcookie') ? ' checked="checked"' : '').'>';
 		$formElements[] = $n;
- 		//End - optoutcookie
-	
+		//End - optoutcookie
+
 	$fragment = new rex_fragment();
 	$fragment->setVar('elements', $formElements, false);
-	$content .= $fragment->parse('core/form/form.php');
+	$content .= $fragment->parse('core/form/checkbox.php');
 	
 	$content .= '    </fieldset>';
 	
