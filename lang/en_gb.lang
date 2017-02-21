@@ -11,5 +11,5 @@ analytics_help_intro = Das Addon bietet die Möglichkeit Googleanalytics im Fron
 analytics_help_withtags = With <script>-Tags
 analytics_help_withouttags = Without <script>-Tags
 
-perm_general_analytics[] = Permissions for the Analytics-Addon
-perm_general_analytics[config] = Permissions for the Configurationpage of the Analytics-Addon
+perm_general_analytics[] = Analytics: show addon
+perm_general_analytics[config] = Analytics: access to configuration page
