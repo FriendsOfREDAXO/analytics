@@ -7,7 +7,7 @@ analytics_config_optoutcookie = Make Opt-Out-Cookie settable?
 analytics_config_action_save = Save settings
 analytics_config_saved = Settings successfully saved!
 
-analytics_help_intro = Das Addon bietet die Möglichkeit Googleanalytics im Frontend einzubinden und via Backend zu konfigurieren. Das Addon hat den Vorteil, dass evtl. anfallende Codeänderungen seitens Google automatisch geupdatet werden. Im Frontend kann man den Analyticscode wie folgt einbinden:
+analytics_help_intro = This AddOn allows emedding and configuring Google Analytics code in the frontend and backend respectively. One advantage of this AddOn is that changes made by Google to the Analytics embed code are automagically updated. To embed the necessary code in the frontend, do the following:
 analytics_help_withtags = With <script>-Tags
 analytics_help_withouttags = Without <script>-Tags
 
