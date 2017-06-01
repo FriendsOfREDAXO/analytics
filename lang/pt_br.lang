@@ -1,0 +1,15 @@
+analytics_title = Analytics
+
+analytics_config = Configuração
+analytics_config_code = Rastreando-ID
+analytics_config_anonymize = <a href="https://www.datenschutzbeauftragter-info.de/fachbeitraege/google-analytics-datenschutzkonform-einsetzen/" title="Use of Google Analytics privacy compliant" target="_blank">Anonymize <i class="fa fa-external-link"></i></a> IP?
+analytics_config_optoutcookie = Tornar Opt-out-Cookie configurável?
+analytics_config_action_save = Salvar cofnigurações
+analytics_config_saved = Configurações salvas com sucesso!
+
+analytics_help_intro = Este AddOn permite integrar e configurar códigos do  Google Analytics no frontend e backend, respectivamente. Uma vantagem deste AddOn é que mudanças realizadas pelo Google nos códigos intregados no Analytics são automaticamente atualizadas. Para integrar o código necessário no Frontend, faça o seguinte:
+analytics_help_withtags = Com <script>-Tags
+analytics_help_withouttags = Sem <script>-Tags
+
+perm_general_analytics[] = Analytics: mostrar Addon
+perm_general_analytics[config] = Analytics: acesso à página de configuração
