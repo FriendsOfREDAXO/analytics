@@ -1,0 +1,15 @@
+analytics_title = Analytics
+
+analytics_config = Konfiguration
+analytics_config_code = Tracking-ID
+analytics_config_anonymize = IP <a href="https://www.datenschutzbeauftragter-info.de/fachbeitraege/google-analytics-datenschutzkonform-einsetzen/" title="Google Analytics dataskydd kompatibel einsetzen" target="_blank"> Anonymisera <i class = "fa FA-extern-link "> </ i> denna kod?
+analytics_config_optoutcookie = Make Opt-Out-Cookie settable?
+analytics_config_action_save = Spara inställnigar
+analytics_config_saved = Inställningar har sparats!
+
+analytics_help_intro = Denna AddO erbjuder möjligheten att inbädda och konfigureraGoogle Analytics-koden i respektive frontend och backend. En fördel med denna AddOn är att ändringar som gjorts av Google till inbäddningskoden för Analytics uppdateras automatiskt. För att bädda in nödvändig kod i fronten gör du följande:
+analytics_help_withtags = Med <script>-taggar
+analytics_help_withouttags = Utan >script>-taggar
+
+perm_general_analytics[] = Analytics: Visa AddOn
+perm_general_analytics[config] = Analytics: Tillgång till konfigurationssidan
