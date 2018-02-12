@@ -1,0 +1,15 @@
+analytics_title = Analítica
+
+analytics_config = Configuración
+analytics_config_code = ID de seguimiento
+analytics_config_anonymize = IP <a href="https://www.datenschutzbeauftragter-info.de/fachbeitraege/google-analytics-datenschutzkonform-einsetzen/" title="Personalizar Google Analytics" target="_blank"> anonimizar <i class = "fa fa-external-link"></i></a>?
+analytics_config_optoutcookie = ¿Puede establecerse la cookie de exclusión voluntaria?
+analytics_config_action_save = Guardar configuraciones
+analytics_config_saved = Los ajustes han sido guardados!
+
+analytics_help_intro = El complemento ofrece la posibilidad de integrar Googleanalytics en la interfaz y configurarlo a través del back-end. El complemento tiene la ventaja de que cualquier cambio de código resultante por Google se actualizará automáticamente. En la interfaz, puede integrar el código analítico de la siguiente manera:
+analytics_help_withtags = Con etiquetas <script> adjuntas
+analytics_help_withouttags = Sin incluir etiquetas <script>
+
+perm_general_analytics[] = Analítica: Mostrar complemento
+perm_general_analytics[config] = Analítica: Acceso a la página de configuración
