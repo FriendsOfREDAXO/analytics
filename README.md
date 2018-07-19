@@ -7,18 +7,18 @@ Das Addon bietet die Möglichkeit Googleanalytics im Frontend einzubinden und vi
 
 Im Frontend kann man den Analyticscode wie folgt einbinden:
 
-###Mit umschliessenden &lt;script&gt;-Tags
+### Mit umschliessenden &lt;script&gt;-Tags
 
-```
+```php
 <?php
-	echo analytics::output(true);
+echo analytics::output(true);
 ?>
 ```
 
-###Ohne umschliessende &lt;script&gt;-Tags
+### Ohne umschliessende &lt;script&gt;-Tags
 
-```
+```php
 <?php
-	echo analytics::output();
+echo analytics::output();
 ?>
 ```
