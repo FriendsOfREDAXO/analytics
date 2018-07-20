@@ -10,3 +10,6 @@ page:
     icon: rex-icon fa-bar-chart
     subpages:
         config: { title: 'translate:config', perm: analytics[config] }
+
+requires:
+    redaxo: '>=5.1.0'
